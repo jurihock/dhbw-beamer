@@ -1,0 +1,71 @@
+\mode<presentation>
+
+% Options
+
+\def\beamer@dhbw@header{true}
+\DeclareOptionBeamer{header}{\def\beamer@dhbw@header{#1}}
+
+\def\beamer@dhbw@footer{true}
+\DeclareOptionBeamer{footer}{\def\beamer@dhbw@footer{#1}}
+
+\def\beamer@dhbw@true{true}
+\ProcessOptionsBeamer
+
+% Variables
+
+\newlength{\headerheight}
+\setlength{\headerheight}{3.5ex}
+
+\newlength{\footerheight}
+\setlength{\footerheight}{2ex}
+
+\newlength{\lrskip}
+\setlength{\lrskip}{1ex}
+
+% Templates
+
+\setbeamertemplate{headline}
+{
+	\ifx\beamer@dhbw@header\beamer@dhbw@true
+
+	\leavevmode
+
+	\begin{beamercolorbox}[wd=\paperwidth,ht=\headerheight,dp=0pt]{headline}
+		\vbox to \headerheight
+		{
+			\vfil
+			{
+				\beamer@compresstrue
+ 				\insertnavigation{\textwidth}
+			}
+			\vfil
+		}
+	\end{beamercolorbox}
+
+	\fi
+}
+
+\setbeamertemplate{footline}
+{
+	\ifx\beamer@dhbw@footer\beamer@dhbw@true
+
+	\leavevmode
+
+	\begin{beamercolorbox}[wd=\paperwidth,ht=\footerheight,leftskip=\lrskip,rightskip=3\lrskip,dp=0pt]{footline}
+		\vbox to \footerheight
+		{
+			\vfil
+			{
+				\insertshortinstitute[width=0.25\paperwidth]{}\hfill
+				\insertshorttitle[width=0.25\paperwidth]{}\hfill
+				\insertshortdate[width=0.25\paperwidth]{}\hfill
+				\insertpagenumber{}
+			}
+			\vfil
+		}
+	\end{beamercolorbox}
+
+	\fi
+}
+
+\mode<all>
