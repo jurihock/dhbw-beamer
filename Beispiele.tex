@@ -1,0 +1,198 @@
+\section{Folien}
+
+  \subsection{Folie mit Titel}
+  \begin{frame}[fragile]{\subsecname}
+
+    \begin{lstlisting}[gobble=6,escapechar=\%]
+      %\%% Folie mit Titel
+
+      %\textbackslash%begin{frame}{Folie mit Titel}
+      %\textbackslash%end{frame}
+    \end{lstlisting}
+
+  \end{frame}
+
+  \subsection{Folie ohne Titel}
+  \begin{frame}[fragile]
+
+    \begin{lstlisting}[gobble=6,escapechar=\%]
+      %\%% Folie ohne Titel
+      
+      %\textbackslash%begin{frame}
+      %\textbackslash%end{frame}
+    \end{lstlisting}
+    
+  \end{frame}
+
+  \subsection{Folie mit Option [plain]}
+  \begin{frame}[fragile,plain]
+
+    \begin{lstlisting}[gobble=6,escapechar=\%]
+      %\%% Folie mit Option [plain]
+
+      %\textbackslash%begin[plain]{frame}
+      %\textbackslash%end{frame}
+    \end{lstlisting}
+
+  \end{frame}
+
+\section{Text \& Auflistungen}
+
+  \subsection{Lorem}
+  \begin{frame}{\subsecname}
+    \blindtext
+  \end{frame}
+
+  \subsection{Ipsum}
+  \begin{frame}{\subsecname}
+    \blinditemize
+  \end{frame}
+
+  \subsection{Text}
+  \begin{frame}{\subsecname}
+    \textbf{textbf}
+    \emph{emph}
+    \structure{structure}
+    \alert{alert}
+    \color{blue}{blue}
+  \end{frame}
+  
+  \subsection{Auflistungen}
+  \begin{frame}{\subsecname}
+
+    \begin{minipage}[t]{0.5\textwidth}
+      \structure{Enumerate}
+      \par\medskip
+      \begin{enumerate}
+        \item eins
+        \item zwei
+        \item drei
+      \end{enumerate}
+    \end{minipage}%
+    \begin{minipage}[t]{0.5\textwidth}
+      \structure{Itemize}
+      \par\medskip
+      \begin{itemize}
+        \item eins
+        \item zwei
+        \item drei
+      \end{itemize}
+    \end{minipage}
+
+  \end{frame}
+  
+\section{Formeln}
+
+  \subsection{In-Line}
+  \begin{frame}{\subsecname}
+
+    Beispiel: \( E = mc^2 \)
+  
+  \end{frame}
+  
+  \subsection{Extra Line}
+  \begin{frame}{\subsecname}
+
+    Beispiel:
+
+    \begin{equation*}
+      x_{1,2} = -\frac{p}{2} \pm \sqrt{ \left( \frac{p}{2} \right)^2 - q }
+    \end{equation*}
+
+  \end{frame}
+
+\section{Listings}
+
+  \subsection{In-Line}
+  \begin{frame}[fragile]{\subsecname}
+
+    \begin{lstlisting}[gobble=6]
+      % Option [fragile] ist erforderlich!
+
+      \lstinline! ... !
+    \end{lstlisting}
+
+  \end{frame}
+
+  \subsection{Extra Line}
+  \begin{frame}[fragile]{\subsecname}
+
+    \begin{lstlisting}[gobble=6,escapechar=\%]
+      %\%% Option [fragile] ist erforderlich!
+
+      %\textbackslash%begin{lstlisting}
+      %\textbackslash%end{lstlisting}
+    \end{lstlisting}
+
+  \end{frame}
+
+  \subsection{Extra Frame}
+  \begin{frame}[fragile]{\subsecname}
+
+    \begin{lstlisting}[gobble=6]
+      % Option [fragile] ist erforderlich!
+
+      \lstinputlisting{Verzeichnis/Dateiname}
+    \end{lstlisting}
+
+  \end{frame}
+
+\section{Spalten \& Blöcke}
+
+  \subsection{Spalten}
+  \begin{frame}{\subsecname}
+
+    \begin{minipage}[t]{0.5\textwidth}
+      \structure{Links}
+      \par\medskip
+      Inhalt der linken Spalte.
+    \end{minipage}%
+    \begin{minipage}[t]{0.5\textwidth}
+      \structure{Rechts}
+      \par\medskip
+      Inhalt der rechten Spalte.
+    \end{minipage}
+
+  \end{frame}
+
+  \subsection{Blöcke}
+  \begin{frame}[fragile]{\subsecname}
+
+    \begin{block}{Block}
+      \begin{lstlisting}[gobble=8]
+        \begin{block}{Titel}
+          Text
+        \end{block}
+      \end{lstlisting}
+    \end{block}
+
+    \begin{block}{Block}
+      \begin{lstlisting}[gobble=8]
+        \begin{block}{Titel}
+          Text
+        \end{block}
+      \end{lstlisting}
+    \end{block}
+
+  \end{frame}
+
+  \subsection{Blöcke}
+  \begin{frame}[fragile]{\subsecname}
+
+    \begin{exampleblock}{Exampleblock}
+      \begin{lstlisting}[gobble=8]
+        \begin{exampleblock}{Titel}
+          Text
+        \end{exampleblock}
+      \end{lstlisting}
+    \end{exampleblock}
+
+    \begin{alertblock}{Alertblock}
+      \begin{lstlisting}[gobble=8]
+        \begin{alertblock}{Titel}
+          Text
+        \end{alertblock}
+      \end{lstlisting}
+    \end{alertblock}
+
+  \end{frame}

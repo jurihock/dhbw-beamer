@@ -1,10 +1,10 @@
 % Class
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{DHBW}[2021/07/12 DHBW beamer class]
+\ProvidesClass{DHBW}[2021/07/12 DHBW Beamer Class]
 \LoadClassWithOptions{beamer}
 
 % Theme
-\usetheme{DHBW}
+\usetheme[header=true,footer=true]{DHBW}
 
 % Packages
 \usepackage{blindtext} % Blindtext: \blindtext, \Blindtext
