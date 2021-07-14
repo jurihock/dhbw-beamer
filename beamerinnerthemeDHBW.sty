@@ -25,100 +25,100 @@
 
 \AtBeginDocument
 {
-	\begin{frame}[plain]
+  \begin{frame}[plain]
 
-		\begin{beamercolorbox}[wd=\paperwidth,ht=\titlelogoheight,left,dp=0pt]{title header}
-			\vbox to \titlelogoheight
-			{
-				{
-					\vspace{10pt}
-					\hspace{10pt}
-					\includegraphics{DHBW.pdf}
-				}
-				\vfil
-			}
-		\end{beamercolorbox}
+    \begin{beamercolorbox}[wd=\paperwidth,ht=\titlelogoheight,left,dp=0pt]{title header}
+      \vbox to \titlelogoheight
+      {
+        {
+          \vspace{10pt}
+          \hspace{10pt}
+          \includegraphics{DHBW.pdf}
+        }
+        \vfil
+      }
+    \end{beamercolorbox}
 
-		\begin{beamercolorbox}[wd=\paperwidth,ht=\titleheaderheight,left,dp=0pt]{title header}
-			\vbox to \titleheaderheight
-			{
-				\vfil
-				{
-					\color{dhbw-gray}
-					\hspace{50pt}
-					{\usebeamerfont{title}\inserttitle}
-					\ifx\insertsubtitle\@empty
-					\else
-						\par\medskip
-						\hspace{65pt}
-						{\usebeamerfont{subtitle}\insertsubtitle}
-					\fi
-					\par\medskip
-					\hspace{65pt}
-					{\usebeamerfont{author}\insertauthor}
-					---
-					{\usebeamerfont{date}\insertdate}
-					\par\medskip
-				}
-			}
-		\end{beamercolorbox}
+    \begin{beamercolorbox}[wd=\paperwidth,ht=\titleheaderheight,left,dp=0pt]{title header}
+      \vbox to \titleheaderheight
+      {
+        \vfil
+        {
+          \color{dhbw-gray}
+          \hspace{50pt}
+          {\usebeamerfont{title}\inserttitle}
+          \ifx\insertsubtitle\@empty
+          \else
+            \par\medskip
+            \hspace{65pt}
+            {\usebeamerfont{subtitle}\insertsubtitle}
+          \fi
+          \par\medskip
+          \hspace{65pt}
+          {\usebeamerfont{author}\insertauthor}
+          ---
+          {\usebeamerfont{date}\insertdate}
+          \par\medskip
+        }
+      }
+    \end{beamercolorbox}
 
-		\begin{beamercolorbox}[wd=\paperwidth,ht=\titlefooterheight,center,dp=0pt]{title footer}
-			\vbox to \titlefooterheight
-			{
-				\vfil
-				{
-					\begin{beamercolorbox}[wd=\paperwidth,ht=4.5ex,center,dp=0pt]{tricolor1}
-					\end{beamercolorbox}%
-					\nointerlineskip%
-					\begin{beamercolorbox}[wd=\paperwidth,ht=2.5ex,center,dp=0pt]{tricolor2}
-						\vbox to 2.5ex {\vfil\insertinstitute\vfil}
-					\end{beamercolorbox}%
-					\nointerlineskip%
-					\begin{beamercolorbox}[wd=\paperwidth,ht=4.5ex,center,dp=0pt]{tricolor3}
-					\end{beamercolorbox}
-				}
-				\vfil
-			}
-		\end{beamercolorbox}
+    \begin{beamercolorbox}[wd=\paperwidth,ht=\titlefooterheight,center,dp=0pt]{title footer}
+      \vbox to \titlefooterheight
+      {
+        \vfil
+        {
+          \begin{beamercolorbox}[wd=\paperwidth,ht=4.5ex,center,dp=0pt]{tricolor1}
+          \end{beamercolorbox}%
+          \nointerlineskip%
+          \begin{beamercolorbox}[wd=\paperwidth,ht=2.5ex,center,dp=0pt]{tricolor2}
+            \vbox to 2.5ex {\vfil\insertinstitute\vfil}
+          \end{beamercolorbox}%
+          \nointerlineskip%
+          \begin{beamercolorbox}[wd=\paperwidth,ht=4.5ex,center,dp=0pt]{tricolor3}
+          \end{beamercolorbox}
+        }
+        \vfil
+      }
+    \end{beamercolorbox}
 
-	\end{frame}
+  \end{frame}
 }
 
 \AtBeginPart
 {
-	\begin{frame}[plain]
+  \begin{frame}[plain]
 
-		\begin{beamercolorbox}[wd=\paperwidth,ht=\titleheaderheight,center,dp=0pt]{title header}
-			\vbox to \titleheaderheight
-			{
-				\vfil
-				{
-					{\usebeamerfont{title}\inserttitle}
-					\ifx\insertsubtitle\@empty
-					\else
-						\par\medskip
-						{\usebeamerfont{subtitle}\insertsubtitle}
-					\fi
-					\par\bigskip
-				}
-			}
-		\end{beamercolorbox}
+    \begin{beamercolorbox}[wd=\paperwidth,ht=\titleheaderheight,center,dp=0pt]{title header}
+      \vbox to \titleheaderheight
+      {
+        \vfil
+        {
+          {\usebeamerfont{title}\inserttitle}
+          \ifx\insertsubtitle\@empty
+          \else
+            \par\medskip
+            {\usebeamerfont{subtitle}\insertsubtitle}
+          \fi
+          \par\bigskip
+        }
+      }
+    \end{beamercolorbox}
 
-		\begin{beamercolorbox}[wd=\paperwidth,ht=\titlefooterheight,center,dp=0pt]{title footer}
-			\vbox to \titlefooterheight
-			{
-				\vfil
-				{
-					{\usebeamerfont{part name}\partname~\insertromanpartnumber}
-					\par\bigskip
-					{\usebeamerfont{part title}\insertpart}
-				}
-				\vfil
-			}
-		\end{beamercolorbox}
+    \begin{beamercolorbox}[wd=\paperwidth,ht=\titlefooterheight,center,dp=0pt]{title footer}
+      \vbox to \titlefooterheight
+      {
+        \vfil
+        {
+          {\usebeamerfont{part name}\partname~\insertromanpartnumber}
+          \par\bigskip
+          {\usebeamerfont{part title}\insertpart}
+        }
+        \vfil
+      }
+    \end{beamercolorbox}
 
-	\end{frame}
+  \end{frame}
 }
 
 \mode<all>

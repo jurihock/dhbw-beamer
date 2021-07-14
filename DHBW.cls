@@ -16,9 +16,9 @@
 % Listings
 \lstset
 {
-	basicstyle=\ttfamily\small,
-	breaklines=true,
-	breakatwhitespace=false
+  basicstyle=\ttfamily\small,
+  breaklines=true,
+  breakatwhitespace=false
 }
 
 % URLs
@@ -28,28 +28,26 @@
 \usepackage{ifxetex}
 \ifxetex % XeTex
 
-	\usepackage{fontspec,xltxtra,xunicode}
-	\usefonttheme{professionalfonts}
+  \usepackage{fontspec,xltxtra,xunicode}
 
-	\setmainfont[Mapping=tex-text]{Helvetica}
-	\setsansfont[Mapping=tex-text]{Helvetica}
-	\setmonofont[Scale=MatchLowercase]{Courier}
-	\usepackage{mathptmx}
+  \setmainfont[Mapping=tex-text]{Helvetica}
+  \setsansfont[Mapping=tex-text]{Helvetica}
+  \setmonofont[Scale=MatchLowercase]{Courier}
+  \usepackage{mathptmx}
 
-    \usepackage{polyglossia}
-    \setmainlanguage[babelshorthands=true]{german}
+  \usepackage{polyglossia}
+  \setmainlanguage[babelshorthands=true]{german}
 
 \else % pdfTeX
 
-	\usepackage[utf8]{inputenc}
-	\usepackage[T1]{fontenc}
-	\usefonttheme{professionalfonts}
+  \usepackage[utf8]{inputenc}
+  \usepackage[T1]{fontenc}
 
-	\usepackage[scaled=0.9]{helvet}
-	\usepackage{courier}
-	\usepackage{mathptmx}
+  \usepackage[scaled=0.9]{helvet}
+  \usepackage{courier}
+  \usepackage{mathptmx}
 
-	\usepackage[german,ngerman]{babel}
+  \usepackage[german,ngerman]{babel}
 
 \fi
 
