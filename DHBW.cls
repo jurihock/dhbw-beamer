@@ -33,6 +33,7 @@
   \setmainfont[Mapping=tex-text]{Helvetica}
   \setsansfont[Mapping=tex-text]{Helvetica}
   \setmonofont[Scale=MatchLowercase]{Courier}
+
   \usepackage{mathptmx}
 
   \usepackage{polyglossia}
