@@ -85,40 +85,4 @@
   \end{frame}
 }
 
-\AtBeginPart
-{
-  \begin{frame}[plain]
-
-    \begin{beamercolorbox}[wd=\paperwidth,ht=\titleheaderheight,center,dp=0pt]{title header}
-      \vbox to \titleheaderheight
-      {
-        \vfil
-        {
-          {\usebeamerfont{title}\inserttitle}
-          \ifx\insertsubtitle\@empty
-          \else
-            \par\medskip
-            {\usebeamerfont{subtitle}\insertsubtitle}
-          \fi
-          \par\bigskip
-        }
-      }
-    \end{beamercolorbox}
-
-    \begin{beamercolorbox}[wd=\paperwidth,ht=\titlefooterheight,center,dp=0pt]{title footer}
-      \vbox to \titlefooterheight
-      {
-        \vfil
-        {
-          {\usebeamerfont{part name}\partname~\insertromanpartnumber}
-          \par\bigskip
-          {\usebeamerfont{part title}\insertpart}
-        }
-        \vfil
-      }
-    \end{beamercolorbox}
-
-  \end{frame}
-}
-
 \mode<all>
