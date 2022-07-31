@@ -1,6 +1,6 @@
 % Class
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{DHBW}[2021/08/01 DHBW Beamer Class]
+\ProvidesClass{DHBW}[2022/08/01 DHBW Beamer Class]
 \LoadClassWithOptions{beamer}
 
 % Theme
