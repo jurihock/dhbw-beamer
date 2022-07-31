@@ -21,7 +21,7 @@ PDF Generierung:
 Beamer Class:
 
 ```
-\documentclass[smaller]{DHBW}
+\documentclass{DHBW}
 
 \title{Lorem Ipsum}
 \author{Nomen Nescio}
@@ -38,7 +38,7 @@ Beamer Class:
 Beamer Theme:
 
 ```
-\documentclass[smaller]{beamer}
+\documentclass{beamer}
 \usetheme[header=true,footer=true]{DHBW}
 
 \title{Lorem Ipsum}
