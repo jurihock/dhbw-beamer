@@ -22,6 +22,22 @@
 \newlength{\lrskip}
 \setlength{\lrskip}{1ex}
 
+% Mini Frame Navigation
+
+% additional vskip fix
+\newlength{\minifix}
+\setlength{\minifix}{0pt}
+
+% uncomment one of following to show mini frames
+% \setbeamertemplate{mini frames}[default]
+% \setbeamertemplate{mini frames}[box]
+% \setbeamertemplate{mini frames}[tick]
+
+% uncomment this to hide mini frames
+\setbeamertemplate{mini frames}{}
+\setlength{\headerheight}{\footerheight}
+\setlength{\minifix}{1pt}
+
 % Templates
 
 \setbeamertemplate{headline}
@@ -35,6 +51,7 @@
     {
       \vfil
       {
+        \vskip\minifix
         \beamer@compresstrue
         \insertnavigation{\textwidth}
       }
