@@ -15,32 +15,15 @@
 \usepackage{tabulary}  % Tables:       \begin{tabulary}{\textwidth}{} \end{tabulary}
 \usepackage{tcolorbox} % Boxes:        \begin{tcolorbox}[] \end{tcolorbox}
 
+% Boxes
+\tcbuselibrary{skins}
+
 % Listings
 \lstset
 {
   basicstyle=\ttfamily\small,
   breaklines=true,
   breakatwhitespace=false
-}
-
-% Optionally rotated box with frame, shadow and centered content
-\tcbuselibrary{skins}
-\NewEnviron{sticker}[1][0]
-{
-  \tcbset{%
-    boxrule=0.5pt,
-    colback=white,
-    colframe=dhbw-gray-light,
-    drop lifted shadow,
-    enhanced,
-    sharp corners,
-    tikz={rotate=#1,transform shape},
-  }
-  \begin{center}
-    \begin{tcolorbox}[hbox]
-      \BODY
-    \end{tcolorbox}
-  \end{center}
 }
 
 % URLs
@@ -73,5 +56,24 @@
   \usepackage[german,ngerman]{babel}
 
 \fi
+
+% Sticker: optionally rotated box with frame, shadow and centered content
+\NewEnviron{sticker}[1][0]
+{
+  \tcbset{%
+    boxrule=0.5pt,
+    colback=white,
+    colframe=dhbw-gray-light,
+    drop lifted shadow,
+    enhanced,
+    sharp corners,
+    tikz={rotate=#1,transform shape}
+  }
+  \begin{center}
+    \begin{tcolorbox}[hbox]
+      \BODY
+    \end{tcolorbox}
+  \end{center}
+}
 
 \endinput
