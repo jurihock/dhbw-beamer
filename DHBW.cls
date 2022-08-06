@@ -57,6 +57,9 @@
 
 \fi
 
+% Placeholder for missing block title
+\def\notitle{\vspace*{-1ex}}
+
 % Sticker: optionally rotated box with frame, shadow and centered content
 \NewEnviron{sticker}[1][0]
 {
