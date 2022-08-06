@@ -1,204 +1,245 @@
 \section{Folien}
 
-  \subsection{Folie mit Titel}
-  \begin{frame}[fragile]{\subsecname}
+\subsection{Folie mit Titel}
+\begin{frame}[fragile]{\subsecname}
 
-    \begin{lstlisting}[gobble=6,escapechar=\%]
-      %\%% Folie mit Titel
+  \begin{lstlisting}[gobble=4,escapechar=\%]
+    %\%% Folie mit Titel
 
-      %\textbackslash%begin{frame}{Folie mit Titel}
-      %\textbackslash%end{frame}
-    \end{lstlisting}
+    %\textbackslash%begin{frame}{Folie mit Titel}
+    %\textbackslash%end{frame}
+  \end{lstlisting}
 
-  \end{frame}
+\end{frame}
 
-  \subsection{Folie ohne Titel}
-  \begin{frame}[fragile]
+\subsection{Folie ohne Titel}
+\begin{frame}[fragile]
 
-    \begin{lstlisting}[gobble=6,escapechar=\%]
-      %\%% Folie ohne Titel
-      
-      %\textbackslash%begin{frame}
-      %\textbackslash%end{frame}
-    \end{lstlisting}
+  \begin{lstlisting}[gobble=4,escapechar=\%]
+    %\%% Folie ohne Titel
     
-  \end{frame}
+    %\textbackslash%begin{frame}
+    %\textbackslash%end{frame}
+  \end{lstlisting}
+  
+\end{frame}
 
-  \subsection{Folie mit Option [plain]}
-  \begin{frame}[fragile,plain]
+\subsection{Folie mit Option [plain]}
+\begin{frame}[fragile,plain]
 
-    \begin{lstlisting}[gobble=6,escapechar=\%]
-      %\%% Folie mit Option [plain]
+  \begin{lstlisting}[gobble=4,escapechar=\%]
+    %\%% Folie mit Option [plain]
 
-      %\textbackslash%begin[plain]{frame}
-      %\textbackslash%end{frame}
-    \end{lstlisting}
+    %\textbackslash%begin[plain]{frame}
+    %\textbackslash%end{frame}
+  \end{lstlisting}
 
-  \end{frame}
+\end{frame}
 
 \section{Text \& Auflistungen}
 
-  \subsection{Lorem}
-  \begin{frame}{\subsecname}
-    \blindtext
-  \end{frame}
+\subsection{Lorem}
+\begin{frame}{\subsecname}
+  \blindtext
+\end{frame}
 
-  \subsection{Ipsum}
-  \begin{frame}{\subsecname}
-    \blinditemize
-  \end{frame}
+\subsection{Ipsum}
+\begin{frame}{\subsecname}
+  \blinditemize
+\end{frame}
 
-  \subsection{Text}
-  \begin{frame}{\subsecname}
-    \textbf{textbf}
-    \emph{emph}
-    \newline
-    \structure{structure}
-    \alert{alert}
-    \newline
-    \color{dhbw-red}{red}
-    \color{dhbw-green}{green}
-    \color{dhbw-blue}{blue}
-  \end{frame}
-  
-  \subsection{Auflistungen}
-  \begin{frame}{\subsecname}
+\subsection{Text}
+\begin{frame}{\subsecname}
+  \textbf{textbf}
+  \emph{emph}
+  \newline
+  \structure{structure}
+  \alert{alert}
+  \newline
+  \color{dhbw-red}{red}
+  \color{dhbw-green}{green}
+  \color{dhbw-blue}{blue}
+\end{frame}
 
-    \begin{minipage}[t]{0.5\textwidth}
-      \structure{Enumerate}
-      \par\medskip
-      \begin{enumerate}
-        \item eins
-        \item zwei
-        \item drei
-      \end{enumerate}
-    \end{minipage}%
-    \begin{minipage}[t]{0.5\textwidth}
-      \structure{Itemize}
-      \par\medskip
-      \begin{itemize}
-        \item eins
-        \item zwei
-        \item drei
-      \end{itemize}
-    \end{minipage}
+\subsection{Auflistungen}
+\begin{frame}{\subsecname}
 
-  \end{frame}
-  
+  \begin{minipage}[t]{0.5\textwidth}
+    \structure{Enumerate}
+    \par\medskip
+    \begin{enumerate}
+      \item eins
+      \item zwei
+      \item drei
+    \end{enumerate}
+  \end{minipage}%
+  \begin{minipage}[t]{0.5\textwidth}
+    \structure{Itemize}
+    \par\medskip
+    \begin{itemize}
+      \item eins
+      \item zwei
+      \item drei
+    \end{itemize}
+  \end{minipage}
+
+\end{frame}
+
 \section{Formeln}
 
-  \subsection{In-Line}
-  \begin{frame}{\subsecname}
+\subsection{In-Line}
+\begin{frame}{\subsecname}
 
-    Beispiel: \( E = mc^2 \)
-  
-  \end{frame}
-  
-  \subsection{Extra Line}
-  \begin{frame}{\subsecname}
+  Beispiel: \( E = mc^2 \)
 
-    Beispiel:
+\end{frame}
 
-    \begin{equation*}
-      x_{1,2} = -\frac{p}{2} \pm \sqrt{ \left( \frac{p}{2} \right)^2 - q }
-    \end{equation*}
+\subsection{Extra Line}
+\begin{frame}{\subsecname}
 
-  \end{frame}
+  Beispiel:
+
+  \begin{equation*}
+    x_{1,2} = -\frac{p}{2} \pm \sqrt{ \left( \frac{p}{2} \right)^2 - q }
+  \end{equation*}
+
+\end{frame}
 
 \section{Listings}
 
-  \subsection{In-Line}
-  \begin{frame}[fragile]{\subsecname}
+\subsection{In-Line}
+\begin{frame}[fragile]{\subsecname}
 
-    \begin{lstlisting}[gobble=6]
-      % Option [fragile] ist erforderlich!
+  \begin{lstlisting}[gobble=4]
+    % Option [fragile] ist erforderlich!
 
-      \lstinline! ... !
-    \end{lstlisting}
+    \lstinline! ... !
+  \end{lstlisting}
 
-  \end{frame}
+\end{frame}
 
-  \subsection{Extra Line}
-  \begin{frame}[fragile]{\subsecname}
+\subsection{Extra Line}
+\begin{frame}[fragile]{\subsecname}
 
-    \begin{lstlisting}[gobble=6,escapechar=\%]
-      %\%% Option [fragile] ist erforderlich!
+  \begin{lstlisting}[gobble=4,escapechar=\%]
+    %\%% Option [fragile] ist erforderlich!
 
-      %\textbackslash%begin{lstlisting}
-      %\textbackslash%end{lstlisting}
-    \end{lstlisting}
+    %\textbackslash%begin{lstlisting}
+    %\textbackslash%end{lstlisting}
+  \end{lstlisting}
 
-  \end{frame}
+\end{frame}
 
-  \subsection{Extra Frame}
-  \begin{frame}[fragile]{\subsecname}
+\subsection{Extra Frame}
+\begin{frame}[fragile]{\subsecname}
 
-    \begin{lstlisting}[gobble=6]
-      % Option [fragile] ist erforderlich!
+  \begin{lstlisting}[gobble=4]
+    % Option [fragile] ist erforderlich!
 
-      \lstinputlisting{Verzeichnis/Dateiname}
-    \end{lstlisting}
+    \lstinputlisting{Verzeichnis/Dateiname}
+  \end{lstlisting}
 
-  \end{frame}
+\end{frame}
 
 \section{Spalten \& Blöcke}
 
-  \subsection{Spalten}
-  \begin{frame}{\subsecname}
+\subsection{Spalten}
+\begin{frame}{\subsecname}
 
-    \begin{minipage}[t]{0.5\textwidth}
-      \structure{Links}
-      \par\medskip
-      Inhalt der linken Spalte.
-    \end{minipage}%
-    \begin{minipage}[t]{0.5\textwidth}
-      \structure{Rechts}
-      \par\medskip
-      Inhalt der rechten Spalte.
-    \end{minipage}
+  \begin{minipage}[t]{0.5\textwidth}
+    \structure{Links}
+    \par\medskip
+    Inhalt der linken Spalte.
+  \end{minipage}%
+  \begin{minipage}[t]{0.5\textwidth}
+    \structure{Rechts}
+    \par\medskip
+    Inhalt der rechten Spalte.
+  \end{minipage}
 
-  \end{frame}
+\end{frame}
 
-  \subsection{Blöcke}
-  \begin{frame}[fragile]{\subsecname}
+\subsection{Blöcke}
+\begin{frame}[fragile]{\subsecname}
 
-    \begin{block}{Block mit Titel}
-      \begin{lstlisting}[gobble=8]
-        \begin{block}{Titel}
-          Text
-        \end{block}
-      \end{lstlisting}
-    \end{block}
+  \begin{block}{Block mit Titel}
+    \begin{lstlisting}[gobble=6]
+      \begin{block}{Titel}
+        Text
+      \end{block}
+    \end{lstlisting}
+  \end{block}
 
-    \begin{block}{\vspace*{-1ex}}
-      \begin{lstlisting}[gobble=8]
-        % Block ohne Titel
+  \begin{block}{\vspace*{-1ex}}
+    \begin{lstlisting}[gobble=6]
+      % Block ohne Titel
 
-        \begin{block}{\vspace*{-1ex}}
-          Text
-        \end{block}
-      \end{lstlisting}
-    \end{block}
+      \begin{block}{\vspace*{-1ex}}
+        Text
+      \end{block}
+    \end{lstlisting}
+  \end{block}
 
-  \end{frame}
+\end{frame}
 
-  \subsection{Blöcke}
-  \begin{frame}[fragile]{\subsecname}
+\subsection{Blöcke}
+\begin{frame}[fragile]{\subsecname}
 
-    \begin{exampleblock}{Exampleblock}
-      \begin{lstlisting}[gobble=8]
-        \begin{exampleblock}{Titel}
-          Text
-        \end{exampleblock}
-      \end{lstlisting}
-    \end{exampleblock}
+  \begin{exampleblock}{Exampleblock}
+    \begin{lstlisting}[gobble=6]
+      \begin{exampleblock}{Titel}
+        Text
+      \end{exampleblock}
+    \end{lstlisting}
+  \end{exampleblock}
 
-    \begin{alertblock}{Alertblock}
-      \begin{lstlisting}[gobble=8]
-        \begin{alertblock}{Titel}
-          Text
-        \end{alertblock}
-      \end{lstlisting}
-    \end{alertblock}
+  \begin{alertblock}{Alertblock}
+    \begin{lstlisting}[gobble=6]
+      \begin{alertblock}{Titel}
+        Text
+      \end{alertblock}
+    \end{lstlisting}
+  \end{alertblock}
 
-  \end{frame}
+\end{frame}
+
+\section{Stickers}
+
+\subsection{Sticker}
+\begin{frame}{\subsecname}
+
+  \begin{sticker}[+1]
+    \includegraphics[width=0.7\textwidth]{DHBW.pdf}
+  \end{sticker}
+
+\end{frame}
+
+\subsection{Sticker}
+\begin{frame}{\subsecname}
+
+  \begin{sticker}[0]
+    \includegraphics[width=0.7\textwidth]{DHBW.pdf}
+  \end{sticker}
+
+\end{frame}
+
+\subsection{Sticker}
+\begin{frame}{\subsecname}
+
+  \begin{sticker}[-1]
+    \includegraphics[width=0.7\textwidth]{DHBW.pdf}
+  \end{sticker}
+
+\end{frame}
+
+
+
+
+
+
+
+
+
+
+
+

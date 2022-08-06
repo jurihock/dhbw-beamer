@@ -7,11 +7,13 @@
 \usetheme[header=true,footer=true]{DHBW}
 
 % Packages
-\usepackage{blindtext} % Blindtext: \blindtext, \Blindtext
-\usepackage{csquotes}  % Quotes:    \enquote{}
-\usepackage{graphicx}  % Graphics:  \includegraphics[]{}
-\usepackage{listings}  % Listings:  \lstinline!!, \begin{lstlisting} \end{lstlisting}, \lstinputlisting{}
-\usepackage{tabulary}  % Tables:    \begin{tabulary}{\textwidth}{} \end{tabulary}
+\usepackage{blindtext} % Blindtext:    \blindtext, \Blindtext
+\usepackage{csquotes}  % Quotes:       \enquote{}
+\usepackage{environ}   % Environments: \NewEnviron{}[][0]
+\usepackage{graphicx}  % Graphics:     \includegraphics[]{}
+\usepackage{listings}  % Listings:     \lstinline!!, \begin{lstlisting} \end{lstlisting}, \lstinputlisting{}
+\usepackage{tabulary}  % Tables:       \begin{tabulary}{\textwidth}{} \end{tabulary}
+\usepackage{tcolorbox} % Boxes:        \begin{tcolorbox}[] \end{tcolorbox}
 
 % Listings
 \lstset
@@ -19,6 +21,26 @@
   basicstyle=\ttfamily\small,
   breaklines=true,
   breakatwhitespace=false
+}
+
+% Optionally rotated box with frame, shadow and centered content
+\tcbuselibrary{skins}
+\NewEnviron{sticker}[1][0]
+{
+  \tcbset{%
+    boxrule=0.5pt,
+    colback=white,
+    colframe=dhbw-gray-light,
+    drop lifted shadow,
+    enhanced,
+    sharp corners,
+    tikz={rotate=#1,transform shape},
+  }
+  \begin{center}
+    \begin{tcolorbox}[hbox]
+      \BODY
+    \end{tcolorbox}
+  \end{center}
 }
 
 % URLs
