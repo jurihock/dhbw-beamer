@@ -1,0 +1,12 @@
+<snippet>
+	<content><![CDATA[
+\begin{minipage}[t]{${1:0.5}\textwidth}
+  ${2}
+\end{minipage}%
+\begin{minipage}[t]{${1}\textwidth}
+  ${3}
+\end{minipage}
+]]></content>
+	<tabTrigger>mini</tabTrigger>
+	<scope>text.tex.latex</scope>
+</snippet>

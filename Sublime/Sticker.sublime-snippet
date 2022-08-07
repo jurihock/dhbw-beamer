@@ -1,0 +1,9 @@
+<snippet>
+	<content><![CDATA[
+\begin{${1}sticker}[${2:0}]
+  ${3}
+\end{${1}sticker}
+]]></content>
+	<tabTrigger>str</tabTrigger>
+	<scope>text.tex.latex</scope>
+</snippet>

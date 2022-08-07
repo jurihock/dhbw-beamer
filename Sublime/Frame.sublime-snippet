@@ -1,0 +1,12 @@
+<snippet>
+	<content><![CDATA[
+\subsection{${1:title}}
+\begin{frame}{\subsecname}
+
+  ${2}
+
+\end{frame}
+]]></content>
+	<tabTrigger>frame</tabTrigger>
+	<scope>text.tex.latex</scope>
+</snippet>
