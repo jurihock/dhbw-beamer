@@ -9,14 +9,13 @@
 % Packages
 \usepackage{blindtext} % Blindtext:    \blindtext, \Blindtext
 \usepackage{csquotes}  % Quotes:       \enquote{}
-\usepackage{environ}   % Environments: \NewEnviron{}[][0]
+\usepackage{environ}   % Environments: \NewEnviron{}[][]{}
 \usepackage{graphicx}  % Graphics:     \includegraphics[]{}
 \usepackage{listings}  % Listings:     \lstinline!!, \begin{lstlisting} \end{lstlisting}, \lstinputlisting{}
 \usepackage{tabulary}  % Tables:       \begin{tabulary}{\textwidth}{} \end{tabulary}
-\usepackage{tcolorbox} % Boxes:        \begin{tcolorbox}[] \end{tcolorbox}
 
-% Boxes
-\tcbuselibrary{skins}
+% Placeholder for empty block title
+\def\noblocktitle{\vspace*{-1ex}}
 
 % Listings
 \lstset
@@ -57,10 +56,15 @@
 
 \fi
 
-% Placeholder for missing block title
-\def\notitle{\vspace*{-1ex}}
+% Stickers
+\usepackage{tcolorbox}
+\tcbuselibrary{skins}
+\usepackage[absolute,overlay]{textpos}
+\setlength{\TPHorizModule}{\paperwidth}
+\setlength{\TPVertModule}{\paperwidth}
 
-% Sticker: optionally rotated box with frame, shadow and centered content
+% Sticker: optionally rotated white box with frame and shadow
+%          (placed inline)
 \NewEnviron{sticker}[1][0]
 {
   \tcbset{%
@@ -70,13 +74,37 @@
     drop lifted shadow,
     enhanced,
     sharp corners,
-    tikz={rotate=#1,transform shape}
+    tikz={rotate=#1,transform shape},
+    tikznode upper
   }
   \begin{center}
     \begin{tcolorbox}[hbox]
       \BODY
     \end{tcolorbox}
   \end{center}
+}
+
+% Sidesticker: optionally rotated yellow box with frame and shadow
+%              (placed on the top right corner)
+\NewEnviron{sidesticker}[1][0]
+{
+  \tcbset{%
+    boxrule=0.5pt,
+    colback=yellow!10,
+    colframe=yellow!90,
+    drop lifted shadow,
+    enhanced,
+    sharp corners,
+    tikz={rotate=#1,transform shape},
+    tikznode upper
+  }
+  \begin{textblock}{0.96}(0, 0.03)
+    \begin{flushright}
+      \begin{tcolorbox}[hbox]
+        \BODY
+      \end{tcolorbox}
+    \end{flushright}
+  \end{textblock}
 }
 
 \endinput
