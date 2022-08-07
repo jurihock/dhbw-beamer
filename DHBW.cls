@@ -90,8 +90,8 @@
 {
   \tcbset{%
     boxrule=0.5pt,
-    colback=yellow!10,
-    colframe=yellow!90,
+    colback=dhbw-yellow!10,
+    colframe=dhbw-yellow!40,
     drop lifted shadow,
     enhanced,
     sharp corners,
