@@ -14,10 +14,18 @@
 % Variables
 
 \newlength{\headerheight}
-\setlength{\headerheight}{3.5ex}
+\ifx\beamer@dhbw@header\beamer@dhbw@true
+  \setlength{\headerheight}{3.5ex}
+\else
+  \setlength{\headerheight}{0ex}
+\fi
 
 \newlength{\footerheight}
-\setlength{\footerheight}{2ex}
+\ifx\beamer@dhbw@footer\beamer@dhbw@true
+  \setlength{\footerheight}{2ex}
+\else
+  \setlength{\footerheight}{0ex}
+\fi
 
 \newlength{\lrskip}
 \setlength{\lrskip}{1ex}
@@ -35,8 +43,10 @@
 
 % uncomment this to hide mini frames
 \setbeamertemplate{mini frames}{}
-\setlength{\headerheight}{\footerheight}
 \setlength{\minifix}{1pt}
+\ifx\beamer@dhbw@header\beamer@dhbw@true
+  \setlength{\headerheight}{\footerheight}
+\fi
 
 % Templates
 
