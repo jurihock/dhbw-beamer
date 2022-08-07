@@ -12,13 +12,13 @@ Erforderliche Dateien:
 * `DHBW.*`
 * `*DHBW.sty`
 
-PDF Generierung:
+PDF erzeugen:
 
 `latexmk -pdf -outdir=Senke Quelle.tex`
 
 ### Minimalbeispiele
 
-Beamer Class:
+Beamer Class mit allen Extras:
 
 ```
 \documentclass{DHBW}
@@ -35,7 +35,7 @@ Beamer Class:
 \end{document}
 ```
 
-Beamer Theme:
+Nur Beamer Theme ohne Extras:
 
 ```
 \documentclass{beamer}
@@ -53,5 +53,4 @@ Beamer Theme:
 \end{document}
 ```
 
-Optionen `header` und `footer` können wahlweise weggelassen werden.
-Die jeweiligen Navigationselemente sind standardmäßig eingeblendet.
+Optionen `header` und `footer` können wahlweise weggelassen werden, diese sind standardmäßig eingeblendet.
